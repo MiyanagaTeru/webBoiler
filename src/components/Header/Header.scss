@@ -1,4 +1,26 @@
-.route--active {
-  font-weight: bold;
-  text-decoration: underline;
+@import 'base';
+
+.header {
+	background-color: $c1;
+	height: 70px;
+	line-height: 70px;
+ 	navigation {
+ 		height: 100%;
+		margin: 0px auto;
+		display: block;
+		max-width: $coreWidth;
+		color: $f1;
+		a {
+			color: $f1;
+			display: inline-block;
+			padding: 0 20px;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover,
+			&.route--active{
+				background: $c2;
+			}
+		}
+	}
 }
+

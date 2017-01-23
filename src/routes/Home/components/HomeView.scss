@@ -1,5 +1,49 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+@import 'base';
+
+.view {
+	width: 100%;
+}
+
+.banner {
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner img {
+	object-fit: cover;
+	width: 100%;
+}
+
+.quote {
+	position: absolute;
+	bottom: 20px;
+	height: 100px;
+	font-size: 36px;
+	line-height: 100px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	width: 100%;
+}
+
+.threeCol{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	.col {
+		width: 32%;
+		padding: 15px;
+		background: $f1;
+		.cropImg {
+			height: 200px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		p {
+			height: 40px;
+		}
+	}
 }
